@@ -4,8 +4,6 @@ from forex_python.converter import CurrencyRates, CurrencyCodes
 cr = CurrencyRates()
 cc = CurrencyCodes()
 
-# print(cc.get_symbol("GBP"))
-
 
 def currency_code_check(currency_code):
     """Get currency name from code"""
