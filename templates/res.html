@@ -1,3 +1,19 @@
 {% extends "base.html" %}
 
 {% block title %} Forex Conversion | Results {% endblock %}
+
+{% block content %}
+<div class="card shadow-lg mt-5">
+    <div class="card-header">
+        <h3>Conversion Results</h3>
+    </div>
+    <div class="card-body p-5">
+        <h2 class="card-title">{{msg}}</h2>
+        <h3 class="card-text">Converted amount: <span class="display-4 ml-4"
+                style="font-family: 'Nerko One', cursive;">{{code}}{{res}}</span></h3>
+        <form action="/">
+            <button class="btn btn-outline-primary mt-4">Convert something else</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
